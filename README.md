@@ -10,6 +10,7 @@ This is the backend for the Student Dashboard/Job Tracker app -- a full-stack pr
 - Postman (for testing)
 
 **API Endpoints (so far)**
+
 Tasks:
 - `POST /api/tasks` - Create a task
 -  `GET /api/tasks/:userID` - Get all tasks
