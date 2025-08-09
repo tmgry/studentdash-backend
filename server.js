@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const taskRoutes = require('./routes/tasks');
 const jobRoutes = require('./routes/jobs');
+const authRoutes = require('./routes/auth');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -12,8 +13,9 @@ const PORT = process.env.PORT || 8000;
 //middleware
 app.use(cors());
 app.use(express.json());
-app.use('.api/tasks', taskRoutes);
+app.use('/api/tasks', taskRoutes);
 app.use('/api/jobs', jobRoutes);
+app.use('/api/auth', authRoutes);
 
 
 //root route
