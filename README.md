@@ -9,7 +9,11 @@ This is the backend for the Student Dashboard/Job Tracker app -- a full-stack pr
 - Mongoose
 - Postman (for testing)
 
-**API Endpoints (so far)**
+**API Endpoints**
+
+Auth:
+- `POST /api/auth/register` – Register a new user
+- `POST /api/auth/login` – Login a user
 
 Tasks:
 - `POST /api/tasks` - Create a task
@@ -22,3 +26,10 @@ Job Applications:
 - `GET /api/jobs/:userID` – Get all jobs
 - `PUT /api/jobs/:id` – Update a job
 - `DELETE /api/jobs/:id` – Delete a job
+
+Features Implemented:
+- RESTful API for tasks and job applications
+- MongoDB schema modeling with Mongoose
+- User registration and login with hashed passwords
+- Environment variable configuration
+- Postman testing for all endpoints
